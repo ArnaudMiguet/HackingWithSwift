@@ -33,6 +33,9 @@ class ViewController: UIViewController {
         button2.layer.borderColor = UIColor.lightGray.cgColor
         button3.layer.borderColor = UIColor.lightGray.cgColor
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Score", style: .plain, target: self, action: #selector(showScore))
+//            UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(showScore))
+        
         askQuestion()
     }
     
@@ -45,6 +48,15 @@ class ViewController: UIViewController {
         correctAnswer = Int.random(in: 0...2)
         title = "\(coutries[correctAnswer].uppercased()) - Score : \(score)"
         numberOfQuestionsAsked += 1
+    }
+    
+    
+    
+    @objc
+    func showScore() {
+        let ac = UIAlertController(title: "Your score is \(score)", message: "", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Continue", style: .default))
+        present(ac, animated: true)
     }
 
 
