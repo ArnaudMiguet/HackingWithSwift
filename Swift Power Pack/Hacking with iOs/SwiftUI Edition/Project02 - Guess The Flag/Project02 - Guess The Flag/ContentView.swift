@@ -30,9 +30,8 @@ struct ContentView: View {
                     Button(action: {
                         flagTapped(number)
                     }) {
-                        Image(countries[number].lowercased()).clipShape(Capsule())
-                            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
-                            .shadow(color: .black, radius: 2)
+                        // Project 03 - Challenge 03
+                        FlagImage(imageName: countries[number].lowercased())
                     }
                 }
                 Spacer()
@@ -58,6 +57,17 @@ struct ContentView: View {
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0..<3)
+    }
+}
+
+struct FlagImage: View {
+    var imageName: String
+    
+    var body: some View {
+        Image(imageName)
+            .clipShape(Capsule())
+            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
+            .shadow(color: .black, radius: 2)
     }
 }
 
