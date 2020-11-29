@@ -28,11 +28,21 @@ class DetailViewController: UIViewController {
         }
         
         navigationItem.largeTitleDisplayMode = .never
+        
+        // Challenge 02 from Project 03
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(recommend))
 
         // Load the image and push it to the UIImageView
         if let imageToLoad = selectedImage {
             imageView.image = UIImage(named: imageToLoad)
         }
+    }
+    
+    @objc
+    func recommend() {
+        let vc = UIActivityViewController(activityItems: ["You should try Strom Viewer !"], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true)
     }
     
     // Allow user to hide nav bar when on detail view
