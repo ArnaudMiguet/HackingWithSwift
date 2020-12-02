@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Challenge04" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining lives : 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJv-Sg-mo5">
+                                <rect key="frame" x="112" y="44" width="190" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??????" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XN6-ip-elQ">
+                                <rect key="frame" x="153" y="153" width="108" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a letter to test :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7H-jA-m8f">
+                                <rect key="frame" x="122.5" y="276" width="169" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMG-y5-55J">
+                                <rect key="frame" x="182" y="305.5" width="50" height="38.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="dfW-16-yZX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTX-f2-Xgm">
+                                <rect key="frame" x="185" y="351.5" width="44" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Try !"/>
+                                <connections>
+                                    <action selector="tryLetter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6kL-1d-szv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tested letters :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nev-Vd-hMd">
+                                <rect key="frame" x="147.5" y="442.5" width="119" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AFQLGS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6e-7X-n11">
+                                <rect key="frame" x="20" y="472.5" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5Vg-Fc-jZo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mTX-f2-Xgm" firstAttribute="top" secondItem="AMG-y5-55J" secondAttribute="bottom" constant="7.5" id="56I-9U-Agw"/>
+                            <constraint firstItem="AMG-y5-55J" firstAttribute="centerX" secondItem="A7H-jA-m8f" secondAttribute="centerX" id="6wu-rb-OjG"/>
+                            <constraint firstItem="AMG-y5-55J" firstAttribute="top" secondItem="A7H-jA-m8f" secondAttribute="bottom" constant="7.5" id="MD5-2F-AfX"/>
+                            <constraint firstItem="Y6e-7X-n11" firstAttribute="top" secondItem="Nev-Vd-hMd" secondAttribute="bottom" constant="8" symbolic="YES" id="Ndv-gZ-MLj"/>
+                            <constraint firstItem="Nev-Vd-hMd" firstAttribute="centerX" secondItem="mTX-f2-Xgm" secondAttribute="centerX" id="SO1-T2-A2P"/>
+                            <constraint firstItem="Y6e-7X-n11" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SW7-pe-7Qb"/>
+                            <constraint firstItem="Y6e-7X-n11" firstAttribute="centerX" secondItem="Nev-Vd-hMd" secondAttribute="centerX" id="StM-c2-cyh"/>
+                            <constraint firstItem="YJv-Sg-mo5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="V1x-aa-Uve"/>
+                            <constraint firstItem="XN6-ip-elQ" firstAttribute="centerX" secondItem="YJv-Sg-mo5" secondAttribute="centerX" id="dLj-34-rHU"/>
+                            <constraint firstItem="Nev-Vd-hMd" firstAttribute="top" secondItem="mTX-f2-Xgm" secondAttribute="bottom" constant="50" id="hS2-av-vkg"/>
+                            <constraint firstItem="A7H-jA-m8f" firstAttribute="top" secondItem="XN6-ip-elQ" secondAttribute="bottom" constant="80" id="hb6-gL-qKl"/>
+                            <constraint firstItem="YJv-Sg-mo5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jyQ-11-4lb"/>
+                            <constraint firstItem="mTX-f2-Xgm" firstAttribute="centerX" secondItem="AMG-y5-55J" secondAttribute="centerX" id="o8B-uC-GJt"/>
+                            <constraint firstItem="A7H-jA-m8f" firstAttribute="centerX" secondItem="XN6-ip-elQ" secondAttribute="centerX" id="x6k-Yj-NDz"/>
+                            <constraint firstItem="XN6-ip-elQ" firstAttribute="top" secondItem="YJv-Sg-mo5" secondAttribute="bottom" constant="80" id="zR5-FY-pUk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="letterToTryTextField" destination="AMG-y5-55J" id="Kc5-G4-V4J"/>
+                        <outlet property="remainingLivesLabel" destination="YJv-Sg-mo5" id="VQc-bB-40D"/>
+                        <outlet property="usedLettersLabel" destination="Y6e-7X-n11" id="RMI-oV-Hg8"/>
+                        <outlet property="wordToGuessLabel" destination="XN6-ip-elQ" id="uvg-co-5cW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
