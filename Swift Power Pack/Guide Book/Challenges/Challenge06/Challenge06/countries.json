@@ -1,0 +1,17 @@
+[
+	{
+		"name": "France",
+		"capitalCity": "Paris",
+		"currency": "EUR"
+	},
+	{
+		"name": "Suisse",
+		"capitalCity": "Berne",
+		"currency": "CHF"
+	},
+	{
+		"name": "Espagne",
+		"capitalCity": "Madrid",
+		"currency": "EUR"
+	}
+]
