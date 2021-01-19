@@ -30,6 +30,8 @@ class Board: NSObject, GKGameModel {
         return currentPlayer
     }
     
+    var runCounts = 0
+    
     override init() {
         currentPlayer = Player.allPlayers[0]
         
@@ -101,7 +103,7 @@ class Board: NSObject, GKGameModel {
         if row + (moveY * 3) >= Board.height { return false }
         
         if col + (moveX * 3) < 0 { return false}
-        if col + (moveX * 3) >= Board.height { return false }
+        if col + (moveX * 3) >= Board.width { return false }
         
         if chip(inColumn: col, row: row) != initialChip { return false }
         if chip(inColumn: col + moveX, row: row + moveY) != initialChip { return false }
@@ -121,6 +123,7 @@ class Board: NSObject, GKGameModel {
         if let board = gameModel as? Board {
             slots = board.slots
             currentPlayer = board.currentPlayer
+            runCounts = board.runCounts
         }
     }
     
@@ -146,6 +149,7 @@ class Board: NSObject, GKGameModel {
     
     func apply(_ gameModelUpdate: GKGameModelUpdate) {
         if let move = gameModelUpdate as? Move {
+            runCounts += 1
             add(chip: currentPlayer.chip, in: move.column)
             currentPlayer = currentPlayer.opponent
         }
@@ -154,9 +158,9 @@ class Board: NSObject, GKGameModel {
     func score(for player: GKGameModelPlayer) -> Int {
         if let playerObject = player as? Player {
             if isWin(for: playerObject) {
-                return 1000
+                return 0
             } else if isWin(for: playerObject.opponent) {
-                return -1000
+                return -10000 / max(1, (runCounts-2) * 100)
             }
         }
         return 0

@@ -44,6 +44,7 @@ class ViewController: UIViewController {
     }
     
     func columnForAIMove() -> Int? {
+        board.runCounts = 0
         if let aiMove = strategist.bestMove(for: board.currentPlayer) as? Move {
             return aiMove.column
         }
