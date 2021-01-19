@@ -493,7 +493,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.arnaudmiguet.Project20-FireworksNight";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.arnaudmiguet.Project20-FireworksNight.WatchApp.Extension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -515,7 +515,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.arnaudmiguet.Project20-FireworksNight";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.arnaudmiguet.Project20-FireworksNight.WatchApp.Extension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -536,7 +536,7 @@
 				DEVELOPMENT_TEAM = ZU6CF5F4PX;
 				IBSC_MODULE = Project37_PsychicTester_WatchKit_Extension;
 				INFOPLIST_FILE = "Project37-PsychicTester WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.arnaudmiguet.Project20-FireworksNight.";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.arnaudmiguet.Project20-FireworksNight.WatchApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -556,7 +556,7 @@
 				DEVELOPMENT_TEAM = ZU6CF5F4PX;
 				IBSC_MODULE = Project37_PsychicTester_WatchKit_Extension;
 				INFOPLIST_FILE = "Project37-PsychicTester WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.arnaudmiguet.Project20-FireworksNight.";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.arnaudmiguet.Project20-FireworksNight.WatchApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;

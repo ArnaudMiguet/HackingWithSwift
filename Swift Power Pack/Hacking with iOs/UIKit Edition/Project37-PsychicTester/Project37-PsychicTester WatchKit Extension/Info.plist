@@ -27,7 +27,7 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>ch.arnaudmiguet.Project20-FireworksNight.</string>
+			<string>ch.arnaudmiguet.Project20-FireworksNight.WatchApp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
