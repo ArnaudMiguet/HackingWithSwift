@@ -24,6 +24,7 @@
 		0FB7D93B25B6F83800309E36 /* PhantomFromSpace.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0FB7D93925B6F83800309E36 /* PhantomFromSpace.mp3 */; };
 		0FB7D93C25B6F83800309E36 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0FB7D93A25B6F83800309E36 /* README.txt */; };
 		0FB7D94125B6F96F00309E36 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7D94025B6F96F00309E36 /* CardViewController.swift */; };
+		0FB7DA4B25B868E100309E36 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7DA4A25B868E100309E36 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		0FB7D93925B6F83800309E36 /* PhantomFromSpace.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PhantomFromSpace.mp3; sourceTree = "<group>"; };
 		0FB7D93A25B6F83800309E36 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		0FB7D94025B6F96F00309E36 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		0FB7DA4A25B868E100309E36 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				0FB7D93825B6F83800309E36 /* Content */,
+				0FB7DA4A25B868E100309E36 /* GradientView.swift */,
 				0FB7D8FA25B6F75700309E36 /* AppDelegate.swift */,
 				0FB7D8FC25B6F75700309E36 /* SceneDelegate.swift */,
 				0FB7D8FE25B6F75700309E36 /* ViewController.swift */,
@@ -312,6 +315,7 @@
 			files = (
 				0FB7D94125B6F96F00309E36 /* CardViewController.swift in Sources */,
 				0FB7D8FF25B6F75700309E36 /* ViewController.swift in Sources */,
+				0FB7DA4B25B868E100309E36 /* GradientView.swift in Sources */,
 				0FB7D8FB25B6F75700309E36 /* AppDelegate.swift in Sources */,
 				0FB7D8FD25B6F75700309E36 /* SceneDelegate.swift in Sources */,
 			);
@@ -499,7 +503,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -522,7 +526,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
@@ -542,7 +546,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -563,7 +567,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
