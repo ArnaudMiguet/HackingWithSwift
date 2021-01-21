@@ -15,6 +15,9 @@ struct ContentView: View {
     @State private var scoreTitle = ""
     @State private var score = 0
     
+    @State private var rotations = [0.0, 0.0, 0.0]
+    @State private var alphas = [1.0, 1.0, 1.0]
+    
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.blue, .black]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
@@ -33,6 +36,8 @@ struct ContentView: View {
                         // Project 03 - Challenge 03
                         FlagImage(imageName: countries[number].lowercased())
                     }
+                    .rotationEffect(.degrees(rotations[number]))
+                    .opacity(alphas[number])
                 }
                 Spacer()
             }
@@ -47,15 +52,28 @@ struct ContentView: View {
         if number == correctAnswer {
             scoreTitle = "Correct"
             score += 1
+            withAnimation {
+                rotations[number] = 360
+                alphas = [0.25, 0.25, 0.25]
+                alphas[number] = 1
+            }
         } else {
             scoreTitle = "Wrong, that was the flag of \(countries[number])"
             score -= 1
+            withAnimation {
+                rotations[correctAnswer] = 360
+                alphas = [0.25, 0.25, 0.25]
+                alphas[number] = 1
+                alphas[correctAnswer] = 1
+            }
         }
         showingScore = true
     }
     
     func askQuestion() {
         countries.shuffle()
+        rotations = [0.0, 0.0, 0.0]
+        alphas = [1.0, 1.0, 1.0]
         correctAnswer = Int.random(in: 0..<3)
     }
 }
